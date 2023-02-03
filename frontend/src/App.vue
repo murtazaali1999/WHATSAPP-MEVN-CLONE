@@ -1,7 +1,18 @@
 <template>
-  <v-app>
-    <v-main> </v-main>
-  </v-app>
+  <span>
+    <v-layout>
+      <SideBar />
+    </v-layout>
+
+    <v-layout>
+      <Chat />
+    </v-layout>
+  </span>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import SideBar from "./components/SideBar.vue";
+import Chat from "./components/Chat.vue";
+</script>
+
+<style></style>
